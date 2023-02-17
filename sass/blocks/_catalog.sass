@@ -1,0 +1,45 @@
+.catalog
+    padding-bottom: 80px
+    .title
+        font-weight: 400
+        text-transform: uppercase
+    &__tabs
+        margin-bottom: 0
+        padding-left: 0
+        margin: 50px 0
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        list-style: none
+    &__tab
+        width: 220px
+        height: 50px
+        margin: 0 5px
+        border: 2px solid #D0D0D0
+        font-weight: 400
+        font-size: 18px
+        text-align: center
+        line-height: 46px
+        text-transform: uppercase
+        color: #6B6B6B
+        transform: skewX(-25deg)
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            border: none
+            box-shadow: 3px 3px 20px $main_color
+        div
+            transform: skewX(25deg)
+        &_active
+            background: $main_color
+            border: none
+            color: #fff
+    &__content
+        display: none
+        justify-content: space-around
+        align-items: flex-start
+        flex-wrap: wrap
+        &_active
+            display: flex
+
+        

@@ -1,0 +1,109 @@
+.catalog-item
+    width: 303px
+    min-height: 442px
+    margin-bottom: 20px
+    padding: 20px 17px 15px 17px
+    border: 2px solid #E8E8E8
+    overflow: hidden
+    &__wrapper
+        width: calc( 200% + 20px )
+        display: flex
+    &__main
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        transform: translateX(calc(-100% - 40px))
+        margin-right: 20px
+        transition: 0.7s all
+        &_active
+            transform: translateX(0)
+            margin-right: 0
+    &__second
+        padding-left: 0
+        margin-bottom: 0
+        width: 50%
+        transform: translateX(0)
+        margin-left: 20px
+        list-style: none
+        transition: 0.7s all
+        &_active
+            transform: translateX(calc(-100% - 20px))
+            margin-left: 0
+        li
+            position: relative
+            width: 100%
+            margin: 5px 0
+            padding: 0 0 0 15px
+            font-weight: 300
+            font-size: 14px
+            line-height: 21px
+            &::before
+                content: ''
+                display: block
+                width: 5px
+                height: 5px
+                background: $main_color
+                position: absolute
+                top: 8px
+                left: 0
+    &__img
+        display: block
+        max-width: 100%
+        height: 200px
+    &__title
+        margin-top: 15px
+        font-size: 16px
+    &__descr
+        margin-top: 15px
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        text-align: center
+        color: #0D0D0D
+    &__more
+        margin-top: 10px
+        font-weight: 500
+        font-size: 14px
+        text-align: center
+        text-transform: uppercase
+        text-decoration: none
+        border-bottom: 2px solid $main_color
+        color: $main_color
+        transition: 0.5s all
+        &:hover
+            color: #b40000
+    &__back
+        font-weight: 500
+        font-size: 14px
+        text-transform: uppercase
+        text-decoration: none
+        border-bottom: 2px solid $main_color
+        color: $main_color
+        transition: 0.5s all
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        &:hover
+            color: #b40000
+    hr
+        width: 100%
+        height: 2px
+        margin: 18px 0
+        background: #E8E8E8
+    &__buy
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__old-price
+        font-weight: 300
+        font-size: 14px
+        text-decoration-line: line-through
+        color: #555555
+    &__new-price
+        font-weight: 700
+        font-size: 20px
+        color: #050505
