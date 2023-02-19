@@ -127,6 +127,24 @@
             max-width: 90%
         .prev, .next
             display: none
+    .catalog
+        padding-bottom: 50px
+        &__tab
+            width: 155px
+            height: 45px
+            font-size: 15px
+            line-height: 40px
+    .reviews
+        .review
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &__img
+                margin-right: 0
+            &__txt
+                margin-top: 30px
+            &__name, &__stat, &__content
+                text-align: center  
 @media screen and ( max-width: 575px)
     .container
         max-width: 95%
@@ -170,5 +188,24 @@
             width: 280px
             margin: 0 auto
             margin-top: 40px
-    
+    .catalog
+        .title
+            font-size: 26px
+            line-height: 30px
+        &__tabs
+            flex-direction: column
+            align-items: center
+        &__tab
+            width: 270px
+            height: 45px
+            margin: 7px 0
+            font-size: 15px
+            line-height: 40px
+    .reviews
+        .review
+            &__img
+                width: 140px
+                height: 140px
+            &__content
+                font-size: 14px
             
